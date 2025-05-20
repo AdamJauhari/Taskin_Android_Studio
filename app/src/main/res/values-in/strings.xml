@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Taskin</string>
+    <string name="hello_world">Halo Dunia!</string>
+
+    <!-- UI Placeholders -->
+    <string name="set_light_theme">Atur Terang</string>
+    <string name="set_dark_theme">Atur Gelap</string>
+    <string name="set_system_theme">Atur Sistem</string>
+
+    <string name="set_english">Atur Inggris</string>
+    <string name="set_indonesian">Atur Indonesia</string>
+    <string name="set_chinese">Atur Mandarin</string>
+
+    <string name="settings_title">Pengaturan</string>
+    <string name="theme_light">Mode Terang</string>
+    <string name="theme_dark">Mode Gelap</string>
+    <string name="theme_system">Default Sistem</string>
+    <string name="theme_dark_mode_toggle">Alihkan Mode Gelap</string>
+    <string name="theme_toggle_menu_item_light">Ganti ke Mode Terang</string>
+    <string name="theme_toggle_menu_item_dark">Ganti ke Mode Gelap</string>
+    <string name="language_title">Bahasa</string>
+    <string name="language_english">Inggris</string>
+    <string name="language_indonesian">Indonesia</string>
+    <string name="language_chinese">Mandarin</string>
+</resources> 

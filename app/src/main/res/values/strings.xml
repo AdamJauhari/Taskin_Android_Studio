@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Taskin</string>
+    <string name="hello_world">Hello World!</string>
+
+    <!-- UI Placeholders -->
+    <string name="set_light_theme">Set Light</string>
+    <string name="set_dark_theme">Set Dark</string>
+    <string name="set_system_theme">Set System</string>
+
+    <string name="set_english">Set English</string>
+    <string name="set_indonesian">Set Indonesian</string>
+    <string name="set_chinese">Set Chinese</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="theme_light">Light Mode</string>
+    <string name="theme_dark">Dark Mode</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_dark_mode_toggle">Toggle Dark Mode</string>
+    <string name="theme_toggle_menu_item_light">Ganti ke Mode Terang</string>
+    <string name="theme_toggle_menu_item_dark">Ganti ke Mode Gelap</string>
+    <string name="language_title">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_indonesian">Indonesian</string>
+    <string name="language_chinese">Chinese</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

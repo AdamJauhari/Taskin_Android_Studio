@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">塔金 (Taskin)</string>
+    <string name="hello_world">你好，世界！</string>
+
+    <!-- UI Placeholders -->
+    <string name="set_light_theme">设置浅色</string>
+    <string name="set_dark_theme">设置深色</string>
+    <string name="set_system_theme">设置系统</string>
+
+    <string name="set_english">设置英语</string>
+    <string name="set_indonesian">设置印尼语</string>
+    <string name="set_chinese">设置中文</string>
+
+    <string name="settings_title">设置</string>
+    <string name="theme_light">浅色模式</string>
+    <string name="theme_dark">深色模式</string>
+    <string name="theme_system">系统默认</string>
+    <string name="theme_dark_mode_toggle">切换暗黑模式</string>
+    <string name="theme_toggle_menu_item_light">切换到浅色模式</string>
+    <string name="theme_toggle_menu_item_dark">切换到深色模式</string>
+    <string name="language_title">语言</string>
+    <string name="language_english">英语</string>
+    <string name="language_indonesian">印尼语</string>
+    <string name="language_chinese">中文</string>
+</resources> 
