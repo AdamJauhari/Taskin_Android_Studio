@@ -12,7 +12,6 @@
                 android:title="@string/theme_toggle_menu_item_dark" />
             <item
                 android:id="@+id/action_language"
-                android:icon="@drawable/ic_translate"
                 android:title="@string/language_title">
                 <menu>
                     <item

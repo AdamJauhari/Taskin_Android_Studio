@@ -70,13 +70,21 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem themeToggleItem = menu.findItem(R.id.action_toggle_theme);
+        MenuItem languageItem = menu.findItem(R.id.action_language); // Get language menu item
+
         int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
         if (currentNightMode == Configuration.UI_MODE_NIGHT_YES) {
             themeToggleItem.setTitle(R.string.theme_toggle_menu_item_light);
             themeToggleItem.setIcon(ContextCompat.getDrawable(this, R.drawable.ic_light_mode));
+            if (languageItem != null) { // Set dark theme translate icon
+                languageItem.setIcon(ContextCompat.getDrawable(this, R.drawable.ic_translate_dark));
+            }
         } else {
             themeToggleItem.setTitle(R.string.theme_toggle_menu_item_dark);
             themeToggleItem.setIcon(ContextCompat.getDrawable(this, R.drawable.ic_dark_mode));
+            if (languageItem != null) { // Set light theme translate icon
+                languageItem.setIcon(ContextCompat.getDrawable(this, R.drawable.ic_translate_light));
+            }
         }
         return super.onPrepareOptionsMenu(menu);
     }
