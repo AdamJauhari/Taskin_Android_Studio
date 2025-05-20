@@ -22,4 +22,12 @@
     <string name="language_english">Inggris</string>
     <string name="language_indonesian">Indonesia</string>
     <string name="language_chinese">Mandarin</string>
+
+    <!-- Bottom Navigation Menu -->
+    <string name="bottom_nav_home">Beranda</string>
+    <string name="bottom_nav_schedule">Jadwal</string>
+    <string name="bottom_nav_materials">Materi</string>
+    <string name="bottom_nav_groups">Grup</string>
+    <string name="bottom_nav_reminders">Pengingat</string>
+    <string name="bottom_nav_class_program">Kelas/Program</string>
 </resources> 

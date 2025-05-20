@@ -26,4 +26,12 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- Bottom Navigation Menu -->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_schedule">Schedule</string>
+    <string name="bottom_nav_materials">Materials</string>
+    <string name="bottom_nav_groups">Groups</string>
+    <string name="bottom_nav_reminders">Reminders</string>
+    <string name="bottom_nav_class_program">Class/Program</string>
 </resources>

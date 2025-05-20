@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">塔金 (Taskin)</string>
-    <string name="hello_world">你好，世界！</string>
+    <string name="hello_world">你好，世界!</string>
 
     <!-- UI Placeholders -->
     <string name="set_light_theme">设置浅色</string>
@@ -22,4 +22,12 @@
     <string name="language_english">英语</string>
     <string name="language_indonesian">印尼语</string>
     <string name="language_chinese">中文</string>
+
+    <!-- Bottom Navigation Menu -->
+    <string name="bottom_nav_home">首页</string>
+    <string name="bottom_nav_schedule">日程</string>
+    <string name="bottom_nav_materials">资料</string>
+    <string name="bottom_nav_groups">群组</string>
+    <string name="bottom_nav_reminders">提醒</string>
+    <string name="bottom_nav_class_program">班级/课程计划</string>
 </resources> 

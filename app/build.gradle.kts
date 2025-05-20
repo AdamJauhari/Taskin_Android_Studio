@@ -34,15 +34,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-        kotlinOptions {
-            jvmTarget = "11"
-            freeCompilerArgs = listOf(
-                "-Xjvm-default=all",
-                "-Xjdk-release=11"
-            )
-        }
-    }
     buildFeatures {
         viewBinding = true
     }
@@ -50,7 +41,18 @@ android {
 
 val room_version = "2.6.1"
 
+// Read JDK home path from gradle.properties
+val projectJdkHomePath = project.extra.properties.get("org.gradle.java.home")?.toString()
+
 kapt {
+    correctErrorTypes = true
+    if (projectJdkHomePath != null && projectJdkHomePath.isNotEmpty()) {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas".toString())
+        }
+        println("Kapt arguments potentially using JDK home: $projectJdkHomePath")
+    }
+
     javacOptions {
         option("--add-opens=java.base/java.lang=ALL-UNNAMED")
         option("--add-opens=java.base/java.io=ALL-UNNAMED")
@@ -65,6 +67,22 @@ kapt {
         option("--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED")
         option("--add-opens=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED")
         option("--add-opens=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED")
+    }
+}
+
+// Read JDK home path from gradle.properties
+// val jdkHomePath = System.getProperty("org.gradle.java.home") ?: project.extra.properties.get("org.gradle.java.home")?.toString() // Commented out problematic block
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    kotlinOptions {
+        jvmTarget = "11"
+        // if (jdkHomePath != null && jdkHomePath.isNotEmpty()) { // Commented out problematic block
+        //     jdkHome = jdkHomePath
+        //     println("Set KotlinCompile JDK home to: $jdkHomePath for task $name")
+        // } else {
+        //     println("Warning: JDK_HOME for KotlinCompile not found in gradle.properties or system properties for task $name.")
+        // }
+        freeCompilerArgs += listOf("-opt-in=kotlin.RequiresOptIn")
     }
 }
 

@@ -3,23 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="uca.aidama.taskin.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:id="@id/navigation_home"
+        android:name="uca.aidama.taskin.ui.main.HomeFragment"
+        android:label="@string/bottom_nav_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="uca.aidama.taskin.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@id/navigation_schedule"
+        android:name="uca.aidama.taskin.ui.main.ScheduleFragment"
+        android:label="@string/bottom_nav_schedule"
+        tools:layout="@layout/fragment_schedule" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="uca.aidama.taskin.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@id/navigation_materials"
+        android:name="uca.aidama.taskin.ui.main.MaterialsFragment"
+        android:label="@string/bottom_nav_materials"
+        tools:layout="@layout/fragment_materials" />
+
+    <fragment
+        android:id="@id/navigation_groups"
+        android:name="uca.aidama.taskin.ui.main.GroupsFragment"
+        android:label="@string/bottom_nav_groups"
+        tools:layout="@layout/fragment_groups" />
+
+    <fragment
+        android:id="@id/navigation_reminders"
+        android:name="uca.aidama.taskin.ui.main.RemindersFragment"
+        android:label="@string/bottom_nav_reminders"
+        tools:layout="@layout/fragment_reminders" />
+
+    <fragment
+        android:id="@+id/navigation_class_program"
+        android:name="uca.aidama.taskin.ui.main.ClassProgramFragment"
+        android:label="@string/bottom_nav_class_program"
+        tools:layout="@layout/fragment_class_program" />
+
 </navigation>

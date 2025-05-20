@@ -28,6 +28,7 @@ public class MainActivity extends BaseActivity {
 
     private ActivityMainBinding binding;
     private NavController navController;
+    private AppBarConfiguration appBarConfiguration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,21 +43,20 @@ public class MainActivity extends BaseActivity {
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
-                .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         
-        // Setup Toolbar with NavController
+        // Initialize appBarConfiguration with top-level destinations from BottomNavigationView
+        appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home, R.id.navigation_schedule, R.id.navigation_materials,
+                R.id.navigation_groups, R.id.navigation_reminders)
+                .build();
+        
+        // Setup Toolbar with NavController and the defined appBarConfiguration
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        
         // Setup BottomNavigationView with NavController
         com.google.android.material.navigation.NavigationBarView navBarView = binding.navView;
         NavigationUI.setupWithNavController(navBarView, navController);
-
-        TextView helloText = findViewById(R.id.text_hello_world);
-        if (helloText != null) {
-            helloText.setText(R.string.hello_world);
-        }
 
         // Placeholder button listeners are removed as they are no longer in the layout
     }
@@ -92,7 +92,13 @@ public class MainActivity extends BaseActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
-        if (itemId == R.id.action_toggle_theme) {
+
+        if (itemId == R.id.action_class_program) {
+            if (navController != null) {
+                navController.navigate(R.id.navigation_class_program);
+            }
+            return true; // Consumed the event
+        } else if (itemId == R.id.action_toggle_theme) {
             int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
             if (currentNightMode == Configuration.UI_MODE_NIGHT_YES) {
                 ThemeHelper.applyTheme(ThemeHelper.THEME_LIGHT);
@@ -102,21 +108,34 @@ public class MainActivity extends BaseActivity {
                 ThemeHelper.saveThemePreference(this, ThemeHelper.THEME_DARK);
             }
             recreate();
-            return true;
+            return true; // Consumed the event
         } else if (itemId == R.id.action_language_english) {
             LocaleHelper.setLocale(this, "en");
             recreate();
-            return true;
+            return true; // Consumed the event
         } else if (itemId == R.id.action_language_indonesian) {
             LocaleHelper.setLocale(this, "in");
             recreate();
-            return true;
+            return true; // Consumed the event
         } else if (itemId == R.id.action_language_chinese) {
             LocaleHelper.setLocale(this, "zh");
             recreate();
-            return true;
+            return true; // Consumed the event
         }
-        // Allow NavController to handle up button and other navigation actions in the ActionBar
+
+        // If the item is not one of our custom handled items,
+        // let NavigationUI try to handle it (e.g., for settings submenu if structured for nav).
+        // Otherwise, fall back to super.
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        // Handles the Up button in the ActionBar. 
+        // It will try to navigate up in the NavController's back stack.
+        // If the current destination is a top-level destination (defined in appBarConfiguration),
+        // it might not navigate up, or the behavior might depend on the specific setup.
+        // This ensures that NavController's logic is prioritized for Up navigation.
+        return NavigationUI.navigateUp(navController, appBarConfiguration) || super.onSupportNavigateUp();
     }
 }
