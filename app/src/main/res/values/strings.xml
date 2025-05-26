@@ -16,22 +16,237 @@
     <string name="theme_dark">Dark Mode</string>
     <string name="theme_system">System Default</string>
     <string name="theme_dark_mode_toggle">Toggle Dark Mode</string>
-    <string name="theme_toggle_menu_item_light">Ganti ke Mode Terang</string>
-    <string name="theme_toggle_menu_item_dark">Ganti ke Mode Gelap</string>
+    <string name="theme_toggle_menu_item_light">Light Mode</string>
+    <string name="theme_toggle_menu_item_dark">Dark Mode</string>
     <string name="language_title">Language</string>
     <string name="language_english">English</string>
     <string name="language_indonesian">Indonesian</string>
-    <string name="language_chinese">Chinese</string>
+    <string name="language_chinese">Chinese (Simplified)</string>
+    <string name="system_default">System Default</string>
+    <string name="class_program_title">Class Program</string>
 
+    <!-- Titles for Navigation -->
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_materials">Materials</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_reminders">Reminders</string>
 
-    <!-- Bottom Navigation Menu -->
+    <!-- Titles for Bottom Navigation -->
     <string name="bottom_nav_home">Home</string>
     <string name="bottom_nav_schedule">Schedule</string>
     <string name="bottom_nav_materials">Materials</string>
     <string name="bottom_nav_groups">Groups</string>
     <string name="bottom_nav_reminders">Reminders</string>
     <string name="bottom_nav_class_program">Class/Program</string>
+
+    <!-- Program Info Strings -->
+    <string name="program_info_title">Class/Program Settings</string>
+    <string name="program_info_description">Set up your class or program details here.</string>
+    <string name="program_info_name_label">Class/Program Name</string>
+    <string name="program_info_name_hint">Enter class/program name</string>
+    <string name="program_info_semester_label">Current Semester</string>
+    <string name="program_info_semester_hint">Enter current semester</string>
+    <string name="program_info_save_button">Save Changes</string>
+    <string name="program_info_changes_saved">Class/Program information saved.</string>
+    <string name="program_info_error_empty_field">This field cannot be empty.</string>
+
+    <!-- Materials Feature Strings -->
+    <string name="materials_tab_visual_notes">Visual Notes</string>
+    <string name="materials_tab_files_documents">Files &amp; Documents</string>
+    <string name="add_material_fab_description">Add new material</string>
+    <string name="empty_materials_list_visual_notes">No visual notes yet for this subject.</string>
+    <string name="empty_materials_list_files">No files or documents yet for this subject.</string>
+    <string name="empty_materials_no_subject_selected">Select a subject to view materials.</string>
+    <string name="empty_materials_add_subjects_prompt">Please add subjects in the Schedule section first to organize your materials.</string>
+    <string name="error_no_file_to_open">No file to open</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_opening_file">Error opening file</string>
+    <string name="open_file_with">Open file with</string>
+    <string name="file_name_label">File: %1$s</string>
+    <string name="material_date_added_text_view">Added: %1$s</string>
+    <string name="delete_material_title">Delete Material</string>
+    <string name="delete_material_message">Are you sure you want to delete this material?</string>
+    <string name="material_deleted_message">Material deleted successfully</string>
+    <string name="error_file_required">Please select a file</string>
+    <string name="error_title_required">Title is required</string>
+    <string name="error_subject_required">Subject is required</string>
+    <string name="material_folder_icon_description">Subject folder icon</string>
+    <string name="material_count_format">%d materi</string>
+    <string name="subject_materials_title">Materials for %s</string>
+    <string name="empty_subjects_message">No subjects available. Please add subjects in the Schedule section first.</string>
+    <string name="select_material_type">Select Material Type</string>
+
+    <string name="dialog_title_add_visual_note">Add New Visual Note</string>
+    <string name="dialog_title_add_file">Add New File</string>
+    <string name="dialog_title_edit_material">Edit Material</string>
+    <string name="hint_material_title">Material Title (Required)</string>
+    <string name="hint_material_subject">Subject (Required)</string>
+    <string name="button_select_file">Select File</string>
+    <string name="button_take_photo">Take Photo</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="error_no_subject_in_schedule">Please add a subject in the Schedule first.</string>
+    <string name="material_type_visual_note">VISUAL_NOTE</string>
+    <string name="material_type_file">FILE</string>
+    <string name="edit_button_text">Edit</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="confirm_delete_material_title">Delete Material</string>
+    <string name="confirm_delete_material_message">Are you sure you want to delete this material? This action cannot be undone.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Class Schedule Feature Strings -->
+    <string name="schedule_header_title">Class Schedule</string>
+    <string name="schedule_header_description">Manage your weekly classes and lectures.</string>
+    <string name="schedule_program_name_display">Class/Program: %s</string>
+    <string name="schedule_semester_display">Semester: %s</string>
+    <string name="schedule_prompt_setup_program_info_card">Class/Program and Semester are not set. <a href="setup_program">Set up here.</a></string>
+    <string name="schedule_prompt_setup_program_info_empty_state">Class/Program and Semester are not set. <a href="setup_program">Set up here</a>. Click "Add Schedule" to start.</string>
+    <string name="schedule_empty_title">Your schedule is empty.</string>
+    <string name="schedule_empty_for_day">No schedule for %1$s.</string>
+    <string name="schedule_empty_title_no_day_selected">No day selected. Please select a day to see the schedule.</string>
+    <string name="schedule_fab_add_class">Add Schedule</string>
+
+    <string name="dialog_title_add_class">Add New Schedule</string>
+    <string name="dialog_title_edit_class">Edit Class Schedule</string>
+    <string name="hint_class_subject_name">Subject Name (Required)</string>
+    <string name="hint_class_day_of_week">Day (Required)</string>
+    <string name="hint_class_start_time">Start Time (Required)</string>
+    <string name="hint_class_end_time">End Time (Required)</string>
+    <string name="hint_class_location">Room Name (Optional)</string>
+    <string name="hint_class_teacher">Teacher/Lecturer (Optional)</string>
+    <string name="button_add_class">Add Schedule</string> <!-- Also used for Save Changes in edit mode -->
+
+    <string name="content_description_edit_schedule">Edit Schedule</string>
+    <string name="content_description_delete_schedule">Delete Schedule</string>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="error_class_subject_name_required">Subject name is required.</string>
+    <string name="error_class_day_of_week_required">Day of the week is required.</string>
+    <string name="error_class_start_time_required">Start time is required.</string>
+    <string name="error_class_end_time_required">End time is required.</string>
+    <string name="error_class_end_time_after_start_time">End time must be after start time.</string>
+    <string name="class_schedule_entry_saved_successfully">Class schedule saved.</string>
+    <string name="class_schedule_entry_deleted_successfully">Class schedule deleted.</string>
+    <string name="dialog_confirm_delete_class_title">Delete Class Schedule</string>
+    <string name="dialog_confirm_delete_class_message">Are you sure you want to delete this class schedule? This action cannot be undone.</string>
+    <string name="default_program_name">Not Set</string>
+    <string name="default_semester">Not Set</string>
+
+    <string name="error_class_day_of_week_invalid">Invalid day. Please select from the list or type a valid day name.</string>
+    <string name="error_invalid_time_format">Invalid time format. Please use HH:mm.</string>
+
+    <!-- Short Day Names for Day Selector -->
+    <string name="day_mon_short">Sen</string>
+    <string name="day_tue_short">Sel</string>
+    <string name="day_wed_short">Rab</string>
+    <string name="day_thu_short">Kam</string>
+    <string name="day_fri_short">Jum</string>
+    <string name="day_sat_short">Sab</string>
+
+    <!-- Groups Feature Strings -->
+    <string name="empty_groups_message">No study groups yet. Click the \'+\' button to create a group based on subjects from your schedule.</string>
+    <string name="add_subject_group">Add Subject Group</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="expand_collapse">Expand/Collapse</string>
+    <string name="add_member">Add Member</string>
+    <string name="empty_members_message">No members in this group yet.</string>
+    <string name="edit_member">Edit Member</string>
+    <string name="delete_member">Delete Member</string>
+    <string name="select_subject">Select Subject</string>
+    <string name="no_subjects_warning">No subjects available. Please add subjects in the Schedule section first.</string>
+    <string name="save">Save</string>
+    <string name="member_name">Member Name</string>
+    <string name="member_role">Member Role (Optional)</string>
+    <string name="error_member_name_required">Member name is required.</string>
+    <string name="group_saved_successfully">Subject group saved successfully.</string>
+    <string name="group_deleted_successfully">Subject group deleted successfully.</string>
+    <string name="member_saved_successfully">Group member saved successfully.</string>
+    <string name="member_deleted_successfully">Group member deleted successfully.</string>
+    <string name="confirm_delete_group_title">Delete Subject Group</string>
+    <string name="confirm_delete_group_message">Are you sure you want to delete this subject group? All members will be deleted too. This action cannot be undone.</string>
+    <string name="confirm_delete_member_title">Delete Group Member</string>
+    <string name="confirm_delete_member_message">Are you sure you want to delete this group member? This action cannot be undone.</string>
+    <string name="direktori_grup">Group Directory</string>
+    <string name="direktori_grup_subtitle">Manage your study groups for each subject from your schedule.</string>
+    <string name="add_new_subject_group">Add New Subject Group</string>
+    <string name="choose_subject_subtitle">Choose a subject from your schedule to create a group.</string>
+    <string name="subject_from_schedule">Subject (from Schedule)</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Reminders Feature Strings -->
+    <string name="reminders_title">Pengingat &amp; Tugas</string>
+    <string name="reminders_subtitle">Kelola pengingat dan tugas untuk semua mata pelajaran Anda.</string>
+    <string name="empty_reminders_message">Belum ada pengingat. Klik tombol \'+\' untuk menambah tugas baru.</string>
+    <string name="add_reminder">Tambah Pengingat</string>
+    <string name="edit_reminder">Edit Pengingat</string>
+    <string name="add_new_reminder">Tambah Pengingat Baru</string>
+    <string name="task_title">Judul Tugas</string>
+    <string name="task_subject">Mata Pelajaran</string>
+    <string name="no_subject">Tanpa Mata Pelajaran</string>
+    <string name="due_date">Tanggal Tenggat</string>
+    <string name="due_time">Waktu Tenggat (Opsional)</string>
+    <string name="task_details">Detail Tugas (Opsional)</string>
+    <string name="select_due_date">Pilih Tanggal Tenggat</string>
+    <string name="select_due_time">Pilih Waktu Tenggat</string>
+    <string name="deadline_format">Tenggat: %1$s</string>
+    <string name="days_left">Sisa %1$d hari</string>
+    <string name="due_today">Tenggat Hari Ini!</string>
+    <string name="due_tomorrow">Tenggat Besok</string>
+    <string name="task_completed">Selesai</string>
+    <string name="task_overdue">Terlambat</string>
+    <string name="edit_task_reminder">Edit Tugas</string>
+    <string name="delete_task_reminder">Hapus Tugas</string>
+    <string name="confirm_delete_reminder_title">Hapus Pengingat</string>
+    <string name="confirm_delete_reminder_message">Anda yakin ingin menghapus pengingat ini?</string>
+    <string name="reminder_saved_successfully">Pengingat berhasil disimpan</string>
+    <string name="reminder_updated_successfully">Pengingat berhasil diperbarui</string>
+    <string name="reminder_deleted_successfully">Pengingat berhasil dihapus</string>
+    <string name="error_task_title_required">Judul tugas wajib diisi</string>
+
+    <!-- Home Fragment Strings -->
+    <string name="welcome_title">Selamat Datang di Taskin</string>
+    <string name="welcome_description">Kelola jadwal, materi, grup belajar, dan pengingat tugas Anda dengan mudah dan terorganisir.</string>
+    <string name="features_title">Fitur Utama</string>
+    <string name="view_schedule">Lihat Jadwal</string>
+    <string name="view_schedule_description">Kelola jadwal kelas dan perkuliahan Anda</string>
+    <string name="manage_materials">Kelola Materi</string>
+    <string name="manage_materials_description">Atur catatan visual dan dokumen untuk setiap mata pelajaran</string>
+    <string name="manage_groups">Atur Grup Belajar</string>
+    <string name="manage_groups_description">Kelola grup belajar untuk setiap mata pelajaran</string>
+    <string name="view_reminders">Lihat Pengingat</string>
+    <string name="view_reminders_description">Pantau tugas dan pengingat penting Anda</string>
+    <string name="app_logo_content_description">Logo aplikasi Taskin</string>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_schedule">Jadwal</string>
+    <string name="nav_materials">Materi</string>
+    <string name="nav_groups">Grup</string>
+    <string name="nav_reminders">Pengingat</string>
+
+    <!-- Settings Feature Strings -->
+    <string name="settings_fragment_title">Pengaturan</string>
+    <string name="data_section_title">Data Aplikasi</string>
+    <string name="export_data_title">Ekspor Data</string>
+    <string name="export_data_description">Simpan jadwal, materi, grup, dan tugas ke file</string>
+    <string name="import_data_title">Impor Data</string>
+    <string name="import_data_description">Muat data dari file yang telah diekspor sebelumnya</string>
+    <string name="export_success_message">Data berhasil diekspor ke %s</string>
+    <string name="export_error_message">Gagal mengekspor data. Silakan periksa izin penyimpanan.</string>
+    <string name="import_success_message">Data berhasil diimpor</string>
+    <string name="import_error_message">Gagal mengimpor data. Format file mungkin tidak valid.</string>
+    <string name="file_picker_title">Pilih file data yang akan diimpor</string>
+    <string name="export_filename">taskin_data.json</string>
+    <string name="confirm_import_title">Konfirmasi Impor</string>
+    <string name="confirm_import_message">Mengimpor data akan mengganti semua data yang ada. Lanjutkan?</string>
+
 </resources>

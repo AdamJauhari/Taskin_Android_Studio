@@ -6,9 +6,12 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
+import androidx.room.Transaction;
 import androidx.room.Update;
 
 import java.util.List;
+
+import uca.aidama.taskin.model.SubjectGroupWithMembers;
 
 @Dao
 public interface SubjectGroupDao {
@@ -27,4 +30,8 @@ public interface SubjectGroupDao {
 
     @Query("SELECT * FROM subject_groups WHERE id = :id")
     LiveData<SubjectGroupEntity> getGroupById(String id);
+    
+    @Transaction
+    @Query("SELECT * FROM subject_groups ORDER BY subjectName")
+    LiveData<List<SubjectGroupWithMembers>> getAllSubjectGroupsWithMembers();
 } 

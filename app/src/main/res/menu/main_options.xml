@@ -15,22 +15,34 @@
         <menu>
             <item
                 android:id="@+id/action_toggle_theme"
+                android:icon="@drawable/ic_dark_mode"
                 android:title="@string/theme_toggle_menu_item_dark" />
             <item
                 android:id="@+id/action_language"
+                android:icon="@drawable/ic_translate_light"
                 android:title="@string/language_title">
                 <menu>
-                    <item
-                        android:id="@+id/action_language_english"
-                        android:title="@string/language_english" />
-                    <item
-                        android:id="@+id/action_language_indonesian"
-                        android:title="@string/language_indonesian" />
-                    <item
-                        android:id="@+id/action_language_chinese"
-                        android:title="@string/language_chinese" />
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/action_language_english"
+                            android:title="English" />
+                        <item
+                            android:id="@+id/action_language_indonesian"
+                            android:title="Bahasa Indonesia" />
+                        <item
+                            android:id="@+id/action_language_chinese"
+                            android:title="中文 (Chinese)" />
+                    </group>
                 </menu>
             </item>
+            <item
+                android:id="@+id/action_export_data"
+                android:icon="@drawable/ic_export"
+                android:title="@string/export_data_title" />
+            <item
+                android:id="@+id/action_import_data"
+                android:icon="@drawable/ic_import"
+                android:title="@string/import_data_title" />
         </menu>
     </item>
 

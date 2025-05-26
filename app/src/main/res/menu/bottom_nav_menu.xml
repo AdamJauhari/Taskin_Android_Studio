@@ -4,26 +4,26 @@
     <item
         android:id="@+id/navigation_schedule"
         android:icon="@drawable/ic_bottom_nav_schedule"
-        android:title="@string/bottom_nav_schedule" />
+        android:title="@string/nav_schedule" />
 
     <item
         android:id="@+id/navigation_materials"
         android:icon="@drawable/ic_bottom_nav_materials"
-        android:title="@string/bottom_nav_materials" />
+        android:title="@string/nav_materials" />
 
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_bottom_nav_home"
-        android:title="@string/bottom_nav_home" />
+        android:title="@string/nav_home" />
 
     <item
         android:id="@+id/navigation_groups"
         android:icon="@drawable/ic_bottom_nav_groups"
-        android:title="@string/bottom_nav_groups" />
+        android:title="@string/nav_groups" />
 
     <item
         android:id="@+id/navigation_reminders"
         android:icon="@drawable/ic_bottom_nav_reminders"
-        android:title="@string/bottom_nav_reminders" />
+        android:title="@string/nav_reminders" />
 
 </menu>

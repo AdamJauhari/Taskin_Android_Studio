@@ -25,4 +25,9 @@
     <color name="colorOnSurfaceDark">#E3F2FD</color>
     <color name="colorBorderDark">#242E38</color>
     <color name="colorInputBackgroundDark">#0F161C</color>
+    <!-- Task reminder status colors -->
+    <color name="colorCompleted">#4CAF50</color>
+    <color name="colorOverdue">#F44336</color>
+    <color name="colorDueToday">#FF9800</color>
+    <color name="colorDueSoon">#FFC107</color>
 </resources>

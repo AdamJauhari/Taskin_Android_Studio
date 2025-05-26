@@ -6,39 +6,99 @@
     app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@id/navigation_home"
+        android:id="@+id/navigation_home"
         android:name="uca.aidama.taskin.ui.main.HomeFragment"
-        android:label="@string/bottom_nav_home"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@id/navigation_schedule"
-        android:name="uca.aidama.taskin.ui.main.ScheduleFragment"
-        android:label="@string/bottom_nav_schedule"
-        tools:layout="@layout/fragment_schedule" />
+        android:id="@+id/navigation_schedule"
+        android:name="uca.aidama.taskin.ui.schedule.ScheduleFragment"
+        android:label="@string/title_schedule"
+        tools:layout="@layout/fragment_schedule">
+        <action
+            android:id="@+id/action_navigation_schedule_to_navigation_class_program"
+            app:destination="@id/navigation_class_program" />
+        <action
+            android:id="@+id/action_navigation_schedule_to_addEditScheduleDialog"
+            app:destination="@id/navigation_add_edit_schedule" />
+    </fragment>
 
     <fragment
-        android:id="@id/navigation_materials"
-        android:name="uca.aidama.taskin.ui.main.MaterialsFragment"
-        android:label="@string/bottom_nav_materials"
-        tools:layout="@layout/fragment_materials" />
+        android:id="@+id/navigation_materials"
+        android:name="uca.aidama.taskin.ui.materials.MaterialsFragment"
+        android:label="@string/title_materials"
+        tools:layout="@layout/fragment_materials_container">
+        <action
+            android:id="@+id/action_navigation_materials_to_addEditMaterialDialog"
+            app:destination="@id/navigation_add_edit_material" />
+        <action
+            android:id="@+id/action_navigation_materials_to_subjectMaterialsFragment"
+            app:destination="@id/subjectMaterialsFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/subjectMaterialsFragment"
+        android:name="uca.aidama.taskin.ui.materials.SubjectMaterialsFragment"
+        android:label="Materials"
+        tools:layout="@layout/fragment_materials">
+        <argument
+            android:name="subject"
+            app:argType="string" />
+    </fragment>
 
     <fragment
-        android:id="@id/navigation_groups"
+        android:id="@+id/navigation_groups"
         android:name="uca.aidama.taskin.ui.main.GroupsFragment"
-        android:label="@string/bottom_nav_groups"
-        tools:layout="@layout/fragment_groups" />
+        android:label="@string/title_groups"
+        tools:layout="@layout/fragment_groups">
+        <action
+            android:id="@+id/action_navigation_groups_to_addEditSubjectGroupDialog"
+            app:destination="@id/navigation_add_edit_subject_group" />
+        <action
+            android:id="@+id/action_navigation_groups_to_addEditGroupMemberDialog"
+            app:destination="@id/navigation_add_edit_group_member" />
+    </fragment>
 
     <fragment
-        android:id="@id/navigation_reminders"
+        android:id="@+id/navigation_reminders"
         android:name="uca.aidama.taskin.ui.main.RemindersFragment"
-        android:label="@string/bottom_nav_reminders"
-        tools:layout="@layout/fragment_reminders" />
+        android:label="@string/title_reminders"
+        tools:layout="@layout/fragment_reminders">
+        <action
+            android:id="@+id/action_navigation_reminders_to_addEditReminderDialog"
+            app:destination="@id/navigation_add_edit_reminder" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_class_program"
-        android:name="uca.aidama.taskin.ui.main.ClassProgramFragment"
-        android:label="@string/bottom_nav_class_program"
-        tools:layout="@layout/fragment_class_program" />
+        android:name="uca.aidama.taskin.ui.programinfo.ProgramInfoFragment"
+        android:label="@string/program_info_title"
+        tools:layout="@layout/fragment_program_info" />
+        
+    <dialog
+        android:id="@+id/navigation_add_edit_schedule"
+        android:name="uca.aidama.taskin.ui.dialogs.AddEditScheduleDialogFragment"
+        android:label="@string/dialog_title_add_class" />
+        
+    <dialog
+        android:id="@+id/navigation_add_edit_material"
+        android:name="uca.aidama.taskin.ui.materials.AddEditMaterialDialogFragment"
+        android:label="@string/dialog_title_add_visual_note" />
+        
+    <dialog
+        android:id="@+id/navigation_add_edit_subject_group"
+        android:name="uca.aidama.taskin.ui.dialogs.AddEditSubjectGroupDialogFragment"
+        android:label="@string/add_new_subject_group" />
+        
+    <dialog
+        android:id="@+id/navigation_add_edit_group_member"
+        android:name="uca.aidama.taskin.ui.dialogs.AddEditGroupMemberDialogFragment"
+        android:label="@string/add_member" />
+        
+    <dialog
+        android:id="@+id/navigation_add_edit_reminder"
+        android:name="uca.aidama.taskin.ui.dialogs.AddEditReminderDialogFragment"
+        android:label="@string/add_new_reminder" />
 
 </navigation>

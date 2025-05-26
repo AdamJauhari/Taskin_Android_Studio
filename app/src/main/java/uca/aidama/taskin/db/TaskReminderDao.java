@@ -27,4 +27,10 @@ public interface TaskReminderDao {
 
     @Query("SELECT * FROM task_reminders WHERE id = :id")
     LiveData<TaskReminderEntity> getTaskById(String id);
+    
+    @Query("SELECT * FROM task_reminders ORDER BY isCompleted ASC, dueDate ASC, dueTime ASC")
+    LiveData<List<TaskReminderEntity>> getAllTasksOrderedByCompletionAndDueDate();
+    
+    @Query("UPDATE task_reminders SET isCompleted = :isCompleted WHERE id = :taskId")
+    void updateTaskCompletionStatus(String taskId, boolean isCompleted);
 } 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">塔金 (Taskin)</string>
-    <string name="hello_world">你好，世界!</string>
+    <string name="hello_world">你好，世界！</string>
 
     <!-- UI Placeholders -->
     <string name="set_light_theme">设置浅色</string>
@@ -16,18 +16,226 @@
     <string name="theme_dark">深色模式</string>
     <string name="theme_system">系统默认</string>
     <string name="theme_dark_mode_toggle">切换暗黑模式</string>
-    <string name="theme_toggle_menu_item_light">切换到浅色模式</string>
-    <string name="theme_toggle_menu_item_dark">切换到深色模式</string>
+    <string name="theme_toggle_menu_item_light">浅色模式</string>
+    <string name="theme_toggle_menu_item_dark">深色模式</string>
     <string name="language_title">语言</string>
     <string name="language_english">英语</string>
-    <string name="language_indonesian">印尼语</string>
-    <string name="language_chinese">中文</string>
+    <string name="language_indonesian">印度尼西亚语</string>
+    <string name="language_chinese">中文（简体）</string>
+    <string name="system_default">系统默认</string>
 
-    <!-- Bottom Navigation Menu -->
+    <!-- Program Info Strings -->
+    <string name="program_info_title">课程/项目设置</string>
+    <string name="program_info_description">在此处设置您的课程或项目详细信息。</string>
+    <string name="program_info_name_label">课程/项目名称</string>
+    <string name="program_info_name_hint">输入课程/项目名称</string>
+    <string name="program_info_semester_label">当前学期</string>
+    <string name="program_info_semester_hint">输入当前学期</string>
+    <string name="program_info_save_button">保存更改</string>
+    <string name="program_info_changes_saved">课程/项目信息已保存。</string>
+    <string name="program_info_error_empty_field">此字段不能为空。</string>
+
+    <string name="class_program_title">课程计划</string>
+
+    <!-- Titles for Navigation -->
+    <string name="title_home">首页</string>
+    <string name="title_schedule">日程</string>
+    <string name="title_materials">学习资料</string>
+    <string name="title_groups">群组</string>
+    <string name="title_reminders">提醒事项</string>
+
+    <!-- Titles for Bottom Navigation -->
     <string name="bottom_nav_home">首页</string>
     <string name="bottom_nav_schedule">日程</string>
     <string name="bottom_nav_materials">资料</string>
     <string name="bottom_nav_groups">群组</string>
     <string name="bottom_nav_reminders">提醒</string>
     <string name="bottom_nav_class_program">班级/课程计划</string>
+
+    <!-- Materials Feature Strings -->
+    <string name="materials_tab_visual_notes">视觉笔记</string>
+    <string name="materials_tab_files_documents">文件与文档</string>
+    <string name="add_material_fab_description">添加新资料</string>
+    <string name="empty_materials_list_visual_notes">该科目暂无视觉笔记。</string>
+    <string name="empty_materials_list_files">该科目暂无文件或文档。</string>
+    <string name="empty_materials_no_subject_selected">请选择科目以查看资料。</string>
+    <string name="empty_materials_add_subjects_prompt">请先在"日程"部分添加科目，以便整理您的资料。</string>
+    <string name="material_count_format">%d 个资料</string>
+
+    <string name="dialog_title_add_visual_note">添加新的视觉笔记</string>
+    <string name="dialog_title_add_file">添加新文件</string>
+    <string name="dialog_title_edit_material">编辑资料</string>
+    <string name="hint_material_title">资料标题 (必填)</string>
+    <string name="hint_material_subject">科目 (必填)</string>
+    <string name="button_select_file">选择文件</string>
+    <string name="button_take_photo">拍摄照片</string>
+    <string name="button_save">保存</string>
+    <string name="button_cancel">取消</string>
+    <string name="error_no_subject_in_schedule">请先在"日程"中添加科目。</string>
+    <string name="error_title_required">标题为必填项。</string>
+    <string name="error_subject_required">科目为必填项。</string>
+    <string name="error_file_required">必须提供文件或图像。</string>
+    <string name="material_type_visual_note">VISUAL_NOTE</string>
+    <string name="material_type_file">FILE</string>
+    <string name="edit_button_text">编辑</string>
+    <string name="delete_button_text">删除</string>
+    <string name="confirm_delete_material_title">删除资料</string>
+    <string name="confirm_delete_material_message">您确定要删除此资料吗？此操作无法撤销。</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="file_name_label">文件: %s</string>
+    <string name="material_date_added_text_view">添加于: %s</string>
+
+    <!-- Class Schedule Feature Strings -->
+    <string name="schedule_header_title">课程表</string>
+    <string name="schedule_header_description">管理您的每周课程和讲座。</string>
+    <string name="schedule_program_name_display">班级/课程: %s</string>
+    <string name="schedule_semester_display">学期: %s</string>
+    <string name="schedule_prompt_setup_program_info_card">班级/课程和学期未设置。 <a href="setup_program">在此处设置。</a></string>
+    <string name="schedule_prompt_setup_program_info_empty_state">班级/课程和学期未设置。 <a href="setup_program">在此处设置</a>。点击"添加日程"开始。</string>
+    <string name="schedule_empty_title">您的日程表是空的。</string>
+    <string name="schedule_empty_for_day">%1$s 没有日程安排。</string>
+    <string name="schedule_empty_title_no_day_selected">未选择日期。请选择一个日期以查看日程。</string>
+    <string name="schedule_fab_add_class">添加日程</string>
+
+    <string name="dialog_title_add_class">添加新日程</string>
+    <string name="dialog_title_edit_class">编辑课程表</string>
+    <string name="hint_class_subject_name">课程名称 (必填)</string>
+    <string name="hint_class_day_of_week">星期 (必填)</string>
+    <string name="hint_class_start_time">开始时间 (必填)</string>
+    <string name="hint_class_end_time">结束时间 (必填)</string>
+    <string name="hint_class_location">房间名称 (可选)</string>
+    <string name="hint_class_teacher">教师/讲师 (可选)</string>
+    <string name="button_add_class">添加日程</string>
+
+    <string name="content_description_edit_schedule">编辑日程</string>
+    <string name="content_description_delete_schedule">删除日程</string>
+
+    <string-array name="days_of_week">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+    <string name="error_class_subject_name_required">课程名称为必填项。</string>
+    <string name="error_class_day_of_week_required">星期为必填项。</string>
+    <string name="error_class_start_time_required">开始时间为必填项。</string>
+    <string name="error_class_end_time_required">结束时间为必填项。</string>
+    <string name="error_class_end_time_after_start_time">结束时间必须晚于开始时间。</string>
+    <string name="class_schedule_entry_saved_successfully">课程表已保存。</string>
+    <string name="class_schedule_entry_deleted_successfully">课程表已删除。</string>
+    <string name="dialog_confirm_delete_class_title">删除课程表</string>
+    <string name="dialog_confirm_delete_class_message">您确定要删除此课程表吗？此操作无法撤销。</string>
+    <string name="default_program_name">未设置</string>
+    <string name="default_semester">未设置</string>
+
+    <string name="error_class_day_of_week_invalid">日期无效。请从列表中选择或输入有效的日期名称。</string>
+    <string name="error_invalid_time_format">时间格式无效。请使用 HH:mm 格式。</string>
+
+    <!-- Short Day Names for Day Selector -->
+    <string name="day_mon_short">一</string>
+    <string name="day_tue_short">二</string>
+    <string name="day_wed_short">三</string>
+    <string name="day_thu_short">四</string>
+    <string name="day_fri_short">五</string>
+    <string name="day_sat_short">六</string>
+    
+    <!-- Groups Feature Strings -->
+    <string name="empty_groups_message">暂无学习小组。点击\'+\'按钮基于您的课程表创建小组。</string>
+    <string name="add_subject_group">添加科目小组</string>
+    <string name="delete_group">删除小组</string>
+    <string name="expand_collapse">展开/收起</string>
+    <string name="add_member">添加成员</string>
+    <string name="empty_members_message">此小组中暂无成员。</string>
+    <string name="edit_member">编辑成员</string>
+    <string name="delete_member">删除成员</string>
+    <string name="select_subject">选择科目</string>
+    <string name="no_subjects_warning">没有可用的科目。请先在"日程"部分添加科目。</string>
+    <string name="save">保存</string>
+    <string name="member_name">成员姓名</string>
+    <string name="member_role">成员角色（可选）</string>
+    <string name="error_member_name_required">成员姓名为必填项。</string>
+    <string name="group_saved_successfully">科目小组已成功保存。</string>
+    <string name="group_deleted_successfully">科目小组已成功删除。</string>
+    <string name="member_saved_successfully">小组成员已成功保存。</string>
+    <string name="member_deleted_successfully">小组成员已成功删除。</string>
+    <string name="confirm_delete_group_title">删除科目小组</string>
+    <string name="confirm_delete_group_message">您确定要删除此科目小组吗？所有成员也将被删除。此操作无法撤销。</string>
+    <string name="confirm_delete_member_title">删除小组成员</string>
+    <string name="confirm_delete_member_message">您确定要删除此小组成员吗？此操作无法撤销。</string>
+    <string name="direktori_grup">小组目录</string>
+    <string name="direktori_grup_subtitle">管理您的课程表中各科目的学习小组。</string>
+    <string name="add_new_subject_group">添加新科目小组</string>
+    <string name="choose_subject_subtitle">从您的课程表中选择一个科目创建小组。</string>
+    <string name="subject_from_schedule">科目（来自课程表）</string>
+    <string name="cancel">取消</string>
+
+    <!-- Reminders Feature Strings -->
+    <string name="reminders_title">提醒与任务</string>
+    <string name="reminders_subtitle">管理所有课程的提醒和任务。</string>
+    <string name="empty_reminders_message">暂无提醒事项。点击\'+\'按钮添加新任务。</string>
+    <string name="add_reminder">添加提醒</string>
+    <string name="edit_reminder">编辑提醒</string>
+    <string name="add_new_reminder">添加新提醒</string>
+    <string name="task_title">任务标题</string>
+    <string name="task_subject">科目</string>
+    <string name="no_subject">无科目</string>
+    <string name="due_date">截止日期</string>
+    <string name="due_time">截止时间（可选）</string>
+    <string name="task_details">任务详情（可选）</string>
+    <string name="select_due_date">选择截止日期</string>
+    <string name="select_due_time">选择截止时间</string>
+    <string name="deadline_format">截止: %1$s</string>
+    <string name="days_left">剩余%1$d天</string>
+    <string name="due_today">今日截止！</string>
+    <string name="due_tomorrow">明日截止</string>
+    <string name="task_completed">已完成</string>
+    <string name="task_overdue">已逾期</string>
+    <string name="edit_task_reminder">编辑任务</string>
+    <string name="delete_task_reminder">删除任务</string>
+    <string name="confirm_delete_reminder_title">删除提醒</string>
+    <string name="confirm_delete_reminder_message">您确定要删除此提醒吗？</string>
+    <string name="reminder_saved_successfully">提醒已成功保存</string>
+    <string name="reminder_updated_successfully">提醒已成功更新</string>
+    <string name="reminder_deleted_successfully">提醒已成功删除</string>
+    <string name="error_task_title_required">任务标题为必填项</string>
+
+    <!-- Home Fragment Strings -->
+    <string name="welcome_title">欢迎使用 Taskin</string>
+    <string name="welcome_description">轻松有序地管理您的课程表、学习资料、学习小组和任务提醒。</string>
+    <string name="features_title">主要功能</string>
+    <string name="view_schedule">查看课程表</string>
+    <string name="view_schedule_description">管理您的课程和讲座安排</string>
+    <string name="manage_materials">管理学习资料</string>
+    <string name="manage_materials_description">为每个科目整理视觉笔记和文档</string>
+    <string name="manage_groups">管理学习小组</string>
+    <string name="manage_groups_description">管理每个科目的学习小组</string>
+    <string name="view_reminders">查看提醒</string>
+    <string name="view_reminders_description">跟踪您的重要任务和提醒</string>
+    <string name="app_logo_content_description">Taskin 应用程序标志</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_schedule">课程表</string>
+    <string name="nav_materials">资料</string>
+    <string name="nav_groups">小组</string>
+    <string name="nav_reminders">提醒</string>
+
+    <!-- Settings Feature Strings -->
+    <string name="settings_fragment_title">设置</string>
+    <string name="data_section_title">应用数据</string>
+    <string name="export_data_title">导出数据</string>
+    <string name="export_data_description">将课程表、学习资料、小组和任务保存到文件</string>
+    <string name="import_data_title">导入数据</string>
+    <string name="import_data_description">从之前导出的文件加载数据</string>
+    <string name="export_success_message">数据已成功导出到 %s</string>
+    <string name="export_error_message">导出数据失败。请检查存储权限。</string>
+    <string name="import_success_message">数据已成功导入</string>
+    <string name="import_error_message">导入数据失败。文件格式可能无效。</string>
+    <string name="file_picker_title">选择要导入的数据文件</string>
+    <string name="export_filename">taskin_data.json</string>
+    <string name="confirm_import_title">确认导入</string>
+    <string name="confirm_import_message">导入数据将替换所有现有数据。是否继续？</string>
 </resources> 
