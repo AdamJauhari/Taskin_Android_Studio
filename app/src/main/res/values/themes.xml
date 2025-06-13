@@ -19,6 +19,18 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!-- Force showing icons in popup menus -->
+        <item name="android:itemTextAppearance">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <!-- Style for popup menu to show icons -->
+    <style name="PopupMenuStyle" parent="Widget.Material3.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:popupBackground">@color/colorSurfaceLight</item>
     </style>
 
     <style name="Theme.Taskin.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">

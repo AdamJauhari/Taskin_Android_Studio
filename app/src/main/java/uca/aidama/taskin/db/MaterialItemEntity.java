@@ -16,7 +16,7 @@ public class MaterialItemEntity {
     @PrimaryKey
     @NonNull
     public String id;
-    
+
     @NonNull
     public String type; // "VISUAL_NOTE" or "FILE"
 

@@ -13,6 +13,11 @@ public class LocaleHelper {
     private static final String PREFS_NAME = "LocalePrefs";
     private static final String KEY_LANGUAGE_CODE = "languageCode";
     private static final String DEFAULT_LANGUAGE = "in"; // Default to Indonesian
+    
+    public static final String LANGUAGE_ENGLISH = "en";
+    public static final String LANGUAGE_INDONESIAN = "in";
+    public static final String LANGUAGE_CHINESE = "zh";
+    public static final String LANGUAGE_SYSTEM = "system";
 
     public static void setLocale(Context context, String languageCode) {
         persistLanguage(context, languageCode);
@@ -25,6 +30,10 @@ public class LocaleHelper {
     public static String loadLocale(Context context) {
         SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         return prefs.getString(KEY_LANGUAGE_CODE, DEFAULT_LANGUAGE);
+    }
+    
+    public static String getLanguage(Context context) {
+        return loadLocale(context);
     }
 
     private static void persistLanguage(Context context, String languageCode) {

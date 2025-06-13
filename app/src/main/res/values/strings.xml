@@ -12,6 +12,9 @@
     <string name="set_chinese">Set Chinese</string>
 
     <string name="settings_title">Settings</string>
+    <string name="settings_section_theme">Display</string>
+    <string name="settings_section_data_management">Data Management</string>
+    <string name="settings_import_data_button">Import Data</string>
     <string name="theme_light">Light Mode</string>
     <string name="theme_dark">Dark Mode</string>
     <string name="theme_system">System Default</string>
@@ -233,20 +236,24 @@
     <string name="nav_groups">Grup</string>
     <string name="nav_reminders">Pengingat</string>
 
-    <!-- Settings Feature Strings -->
-    <string name="settings_fragment_title">Pengaturan</string>
-    <string name="data_section_title">Data Aplikasi</string>
-    <string name="export_data_title">Ekspor Data</string>
-    <string name="export_data_description">Simpan jadwal, materi, grup, dan tugas ke file</string>
-    <string name="import_data_title">Impor Data</string>
-    <string name="import_data_description">Muat data dari file yang telah diekspor sebelumnya</string>
-    <string name="export_success_message">Data berhasil diekspor ke %s</string>
-    <string name="export_error_message">Gagal mengekspor data. Silakan periksa izin penyimpanan.</string>
-    <string name="import_success_message">Data berhasil diimpor</string>
-    <string name="import_error_message">Gagal mengimpor data. Format file mungkin tidak valid.</string>
-    <string name="file_picker_title">Pilih file data yang akan diimpor</string>
-    <string name="export_filename">taskin_data.json</string>
-    <string name="confirm_import_title">Konfirmasi Impor</string>
-    <string name="confirm_import_message">Mengimpor data akan mengganti semua data yang ada. Lanjutkan?</string>
+    <string name="settings_export_data_title">Export Data</string>
+    <string name="settings_import_data_title">Import Data</string>
+    <string name="settings_export_to_file_button">Export to File</string>
+    <string name="settings_import_from_file_button">Import from File</string>
+    <string name="settings_file_export_success">Data exported to file successfully</string>
+    <string name="settings_file_export_failed">Failed to export data to file</string>
+    <string name="settings_file_import_success">Data imported from file successfully</string>
+    <string name="settings_file_import_failed">Failed to import data from file</string>
+    <string name="settings_export_file_name">taskin_data_export.json</string>
+    <string name="settings_data_import_failed">Failed to import data. JSON format may be incorrect.</string>
+    <string name="settings_import_confirm_title">Import Data</string>
+    <string name="settings_import_confirm_message">This will overwrite all existing data. Continue?</string>
+
+    <!-- New menu options -->
+    <string name="mode_terang">Mode Terang</string>
+    <string name="mode_gelap">Mode Gelap</string>
+    <string name="menu_bahasa">Bahasa</string>
+    <string name="menu_ekspor_data">Ekspor Data</string>
+    <string name="menu_impor_data">Impor Data</string>
 
 </resources>

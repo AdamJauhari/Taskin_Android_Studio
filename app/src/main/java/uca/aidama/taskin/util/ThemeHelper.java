@@ -27,6 +27,15 @@ public class ThemeHelper {
                 break;
         }
     }
+    
+    public static void applyTheme(Context context, int themeMode) {
+        applyTheme(themeMode);
+        saveThemePreference(context, themeMode);
+    }
+    
+    public static int getCurrentTheme(Context context) {
+        return loadThemePreference(context);
+    }
 
     public static void saveThemePreference(Context context, int themeMode) {
         SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);

@@ -24,4 +24,14 @@ public interface GroupMemberDao {
 
     @Query("SELECT * FROM group_members WHERE subjectGroupId = :subjectGroupId ORDER BY name")
     LiveData<List<GroupMemberEntity>> getMembersByGroupId(String subjectGroupId);
+    
+    // Added for import/export functionality
+    @Query("SELECT * FROM group_members ORDER BY subjectGroupId, name")
+    List<GroupMemberEntity> getAllGroupMembersSync();
+    
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertAll(List<GroupMemberEntity> groupMembers);
+    
+    @Query("DELETE FROM group_members")
+    void deleteAll();
 } 

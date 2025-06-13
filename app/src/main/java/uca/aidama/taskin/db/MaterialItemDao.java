@@ -33,13 +33,14 @@ public interface MaterialItemDao {
 
     @Query("SELECT * FROM material_items WHERE subject = :subject AND type = :materialType ORDER BY dateAdded DESC")
     LiveData<List<MaterialItemEntity>> getMaterialsBySubjectAndType(String subject, String materialType);
-
-    @Query("SELECT DISTINCT subject FROM material_items ORDER BY subject")
-    LiveData<List<String>> getAllSubjects();
-
+    
+    // Added for import/export functionality
     @Query("SELECT * FROM material_items ORDER BY dateAdded DESC")
-    List<MaterialItemEntity> getAllMaterialsSync();
-
+    List<MaterialItemEntity> getAllMaterialItemsSync();
+    
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertAll(List<MaterialItemEntity> materialItems);
+    
     @Query("DELETE FROM material_items")
-    void deleteAllMaterials();
+    void deleteAll();
 } 

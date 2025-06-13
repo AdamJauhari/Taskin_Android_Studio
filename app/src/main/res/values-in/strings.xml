@@ -19,9 +19,9 @@
     <string name="theme_toggle_menu_item_light">Mode Terang</string>
     <string name="theme_toggle_menu_item_dark">Mode Gelap</string>
     <string name="language_title">Bahasa</string>
-    <string name="language_english">Inggris</string>
+    <string name="language_english">English</string>
     <string name="language_indonesian">Indonesia</string>
-    <string name="language_chinese">Mandarin (Sederhana)</string>
+    <string name="language_chinese">中文(Chinese)</string>
     <string name="system_default">Default Sistem</string>
     <string name="class_program_title">Program Kelas</string>
 
@@ -184,4 +184,25 @@
     <string name="choose_subject_subtitle">Pilih mata pelajaran dari jadwal Anda untuk membuat grup.</string>
     <string name="subject_from_schedule">Mata Pelajaran (dari Jadwal)</string>
     <string name="cancel">Batal</string>
+    
+    <!-- Menu Strings -->
+    <string name="mode_terang">Mode Terang</string>
+    <string name="mode_gelap">Mode Gelap</string>
+    <string name="menu_bahasa">Bahasa</string>
+    <string name="menu_ekspor_data">Ekspor Data</string>
+    <string name="menu_impor_data">Impor Data</string>
+    
+    <!-- Settings Import/Export -->
+    <string name="settings_export_data_title">Ekspor Data</string>
+    <string name="settings_import_data_title">Impor Data</string>
+    <string name="settings_export_to_file_button">Ekspor ke File</string>
+    <string name="settings_import_from_file_button">Impor dari File</string>
+    <string name="settings_file_export_success">Data berhasil diekspor ke file</string>
+    <string name="settings_file_export_failed">Gagal mengekspor data ke file</string>
+    <string name="settings_file_import_success">Data berhasil diimpor dari file</string>
+    <string name="settings_file_import_failed">Gagal mengimpor data dari file</string>
+    <string name="settings_export_file_name">taskin_data_export.json</string>
+    <string name="settings_data_import_failed">Gagal mengimpor data. Format JSON mungkin tidak benar.</string>
+    <string name="settings_import_confirm_title">Impor Data</string>
+    <string name="settings_import_confirm_message">Ini akan menimpa semua data yang ada. Lanjutkan?</string>
 </resources> 

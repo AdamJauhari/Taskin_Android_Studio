@@ -19,9 +19,9 @@
     <string name="theme_toggle_menu_item_light">浅色模式</string>
     <string name="theme_toggle_menu_item_dark">深色模式</string>
     <string name="language_title">语言</string>
-    <string name="language_english">英语</string>
-    <string name="language_indonesian">印度尼西亚语</string>
-    <string name="language_chinese">中文（简体）</string>
+    <string name="language_english">English</string>
+    <string name="language_indonesian">Indonesia</string>
+    <string name="language_chinese">中文(Chinese)</string>
     <string name="system_default">系统默认</string>
 
     <!-- Program Info Strings -->
@@ -205,37 +205,42 @@
     <string name="error_task_title_required">任务标题为必填项</string>
 
     <!-- Home Fragment Strings -->
-    <string name="welcome_title">欢迎使用 Taskin</string>
-    <string name="welcome_description">轻松有序地管理您的课程表、学习资料、学习小组和任务提醒。</string>
+    <string name="welcome_title">欢迎使用塔金</string>
+    <string name="welcome_description">轻松管理您的日程、学习资料、学习小组和任务提醒。</string>
     <string name="features_title">主要功能</string>
-    <string name="view_schedule">查看课程表</string>
-    <string name="view_schedule_description">管理您的课程和讲座安排</string>
+    <string name="view_schedule">查看日程</string>
+    <string name="view_schedule_description">管理您的课程和讲座</string>
     <string name="manage_materials">管理学习资料</string>
-    <string name="manage_materials_description">为每个科目整理视觉笔记和文档</string>
+    <string name="manage_materials_description">整理每门课程的视觉笔记和文档</string>
     <string name="manage_groups">管理学习小组</string>
-    <string name="manage_groups_description">管理每个科目的学习小组</string>
+    <string name="manage_groups_description">管理每门课程的学习小组</string>
     <string name="view_reminders">查看提醒</string>
-    <string name="view_reminders_description">跟踪您的重要任务和提醒</string>
-    <string name="app_logo_content_description">Taskin 应用程序标志</string>
+    <string name="view_reminders_description">追踪您的重要任务和提醒</string>
+    <string name="app_logo_content_description">塔金应用标志</string>
     <string name="nav_home">首页</string>
-    <string name="nav_schedule">课程表</string>
-    <string name="nav_materials">资料</string>
+    <string name="nav_schedule">日程</string>
+    <string name="nav_materials">学习资料</string>
     <string name="nav_groups">小组</string>
     <string name="nav_reminders">提醒</string>
-
-    <!-- Settings Feature Strings -->
-    <string name="settings_fragment_title">设置</string>
-    <string name="data_section_title">应用数据</string>
-    <string name="export_data_title">导出数据</string>
-    <string name="export_data_description">将课程表、学习资料、小组和任务保存到文件</string>
-    <string name="import_data_title">导入数据</string>
-    <string name="import_data_description">从之前导出的文件加载数据</string>
-    <string name="export_success_message">数据已成功导出到 %s</string>
-    <string name="export_error_message">导出数据失败。请检查存储权限。</string>
-    <string name="import_success_message">数据已成功导入</string>
-    <string name="import_error_message">导入数据失败。文件格式可能无效。</string>
-    <string name="file_picker_title">选择要导入的数据文件</string>
-    <string name="export_filename">taskin_data.json</string>
-    <string name="confirm_import_title">确认导入</string>
-    <string name="confirm_import_message">导入数据将替换所有现有数据。是否继续？</string>
+    
+    <!-- Menu Strings -->
+    <string name="mode_terang">浅色模式</string>
+    <string name="mode_gelap">深色模式</string>
+    <string name="menu_bahasa">语言</string>
+    <string name="menu_ekspor_data">导出数据</string>
+    <string name="menu_impor_data">导入数据</string>
+    
+    <!-- Settings Import/Export -->
+    <string name="settings_export_data_title">导出数据</string>
+    <string name="settings_import_data_title">导入数据</string>
+    <string name="settings_export_to_file_button">导出到文件</string>
+    <string name="settings_import_from_file_button">从文件导入</string>
+    <string name="settings_file_export_success">数据已成功导出到文件</string>
+    <string name="settings_file_export_failed">导出数据到文件失败</string>
+    <string name="settings_file_import_success">已成功从文件导入数据</string>
+    <string name="settings_file_import_failed">从文件导入数据失败</string>
+    <string name="settings_export_file_name">taskin_data_export.json</string>
+    <string name="settings_data_import_failed">导入数据失败。JSON格式可能不正确。</string>
+    <string name="settings_import_confirm_title">导入数据</string>
+    <string name="settings_import_confirm_message">这将覆盖所有现有数据。是否继续？</string>
 </resources> 

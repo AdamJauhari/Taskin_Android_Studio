@@ -34,4 +34,14 @@ public interface SubjectGroupDao {
     @Transaction
     @Query("SELECT * FROM subject_groups ORDER BY subjectName")
     LiveData<List<SubjectGroupWithMembers>> getAllSubjectGroupsWithMembers();
+    
+    // Added for import/export functionality
+    @Query("SELECT * FROM subject_groups ORDER BY subjectName")
+    List<SubjectGroupEntity> getAllSubjectGroupsSync();
+    
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertAll(List<SubjectGroupEntity> subjectGroups);
+    
+    @Query("DELETE FROM subject_groups")
+    void deleteAll();
 } 

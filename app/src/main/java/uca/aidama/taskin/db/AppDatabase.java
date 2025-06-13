@@ -43,7 +43,6 @@ public abstract class AppDatabase extends RoomDatabase {
         return INSTANCE;
     }
     
-    // For use in the settings module
     public static AppDatabase getInstance(final Context context) {
         return getDatabase(context);
     }

@@ -33,4 +33,14 @@ public interface TaskReminderDao {
     
     @Query("UPDATE task_reminders SET isCompleted = :isCompleted WHERE id = :taskId")
     void updateTaskCompletionStatus(String taskId, boolean isCompleted);
+    
+    // Added for import/export functionality
+    @Query("SELECT * FROM task_reminders ORDER BY dueDate, dueTime")
+    List<TaskReminderEntity> getAllTaskRemindersSync();
+    
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertAll(List<TaskReminderEntity> taskReminders);
+    
+    @Query("DELETE FROM task_reminders")
+    void deleteAll();
 } 

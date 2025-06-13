@@ -30,4 +30,14 @@ public interface ClassEntryDao {
 
     @Query("SELECT DISTINCT subject FROM class_entries ORDER BY subject")
     LiveData<List<String>> getUniqueSubjectNames();
+    
+    // Added for import/export functionality
+    @Query("SELECT * FROM class_entries ORDER BY dayOfWeek, startTime")
+    List<ClassEntryEntity> getAllClassEntriesSync();
+    
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertAll(List<ClassEntryEntity> classEntries);
+    
+    @Query("DELETE FROM class_entries")
+    void deleteAll();
 } 
