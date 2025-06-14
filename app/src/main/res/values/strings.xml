@@ -249,6 +249,10 @@
     <string name="settings_import_confirm_title">Import Data</string>
     <string name="settings_import_confirm_message">This will overwrite all existing data. Continue?</string>
 
+    <!-- Notification Strings -->
+    <string name="notification_due_tomorrow">Task \"%1$s\" is due in 1 day (%2$s) so don\'t forget to finish it!! If you want good grades.</string>
+    <string name="notification_due_in_3_days">Task \"%1$s\" is due in %2$d days (%3$s) so don\'t forget to finish it!! If you want good grades.</string>
+
     <!-- New menu options -->
     <string name="mode_terang">Mode Terang</string>
     <string name="mode_gelap">Mode Gelap</string>

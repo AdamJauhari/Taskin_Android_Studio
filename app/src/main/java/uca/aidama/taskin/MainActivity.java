@@ -16,6 +16,9 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import android.view.View;
 import android.widget.Toast;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Build;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
@@ -41,6 +44,7 @@ public class MainActivity extends BaseActivity {
     // Activity result launchers for file operations
     private ActivityResultLauncher<String> createFileLauncher;
     private ActivityResultLauncher<String[]> openFileLauncher;
+    private ActivityResultLauncher<String> requestPermissionLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +67,30 @@ public class MainActivity extends BaseActivity {
         openFileLauncher = registerForActivityResult(
                 new ActivityResultContracts.OpenDocument(),
                 this::handleImportFileResult);
+
+        // Initialize permission launcher
+        requestPermissionLauncher = registerForActivityResult(
+                new ActivityResultContracts.RequestPermission(),
+                isGranted -> {
+                    if (isGranted) {
+                        // Permission is granted. Continue the action or workflow in your
+                        // app.
+                        Toast.makeText(this, "Izin notifikasi diberikan", Toast.LENGTH_SHORT).show();
+                    } else {
+                        // Explain to the user that the feature is unavailable because
+                        // the feature requires a permission that the user has denied.
+                        // At the same time, present a UI to the user that clearly explains
+                        // what they can do to activate this feature if they want it. 
+                        Toast.makeText(this, "Izin notifikasi ditolak", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+        // Request notification permission if not granted (for Android 13+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
+            }
+        }
 
         // Get NavController
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);

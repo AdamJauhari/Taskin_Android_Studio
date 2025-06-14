@@ -205,4 +205,8 @@
     <string name="settings_data_import_failed">Gagal mengimpor data. Format JSON mungkin tidak benar.</string>
     <string name="settings_import_confirm_title">Impor Data</string>
     <string name="settings_import_confirm_message">Ini akan menimpa semua data yang ada. Lanjutkan?</string>
+
+    <!-- Notification Strings -->
+    <string name="notification_due_tomorrow">Tugas \"%1$s\" tenggatnya dalam 1 hari (%2$s) loh jadi jangan lupa dikerjakan ya!! Jika ingin nilaimu bagus.</string>
+    <string name="notification_due_in_3_days">Tugas \"%1$s\" tenggatnya dalam %2$d hari (%3$s) loh jadi jangan lupa dikerjakan ya!! Jika ingin nilaimu bagus.</string>
 </resources> 

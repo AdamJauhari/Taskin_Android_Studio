@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:titleTextColor="@color/colorOnPrimary" 
+            app:titleTextColor="@color/colorOnPrimary"
             app:popupTheme="@style/Theme.Taskin" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -39,7 +39,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintTop_toBottomOf="@id/app_bar_layout" 
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
