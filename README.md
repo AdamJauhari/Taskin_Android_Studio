@@ -73,11 +73,6 @@ Taskin/
 - Buka menu di toolbar → pilih **Ekspor Data** untuk menyimpan ke berkas `taskin_data_export.json`.
 - Pilih **Impor Data** untuk memuat berkas JSON. Perhatian: proses ini akan menimpa data yang ada.
 
-## Catatan
-- Jika menargetkan Android 13+, pastikan mengizinkan notifikasi saat diminta.
-- Kamera bersifat opsional; aplikasi tetap berjalan tanpa perangkat kamera.
-
-
 ## Keterangan
 Program ini dibuat untuk menyelesaikan tugas Mata Kuliah Pengantar Interaksi Manusia dan Komputer
 
