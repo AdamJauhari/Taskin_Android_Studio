@@ -87,3 +87,6 @@ Program ini dibuat untuk menyelesaikan tugas Mata Kuliah Pengantar Interaksi Man
 - Vicky Maulana Romadan
 - Aidil Ilham Wertefe
 
+# Link Download Aplikasi
+  https://drive.google.com/file/d/1Pw66T3yefu8Xs1oJjI8n5ToqeHo8pjQs/view?usp=sharing
+
