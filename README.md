@@ -83,5 +83,4 @@ Program ini dibuat untuk menyelesaikan tugas Mata Kuliah Pengantar Interaksi Man
 - Aidil Ilham Wertefe
 
 # Link Download Aplikasi
-  https://drive.google.com/file/d/1Pw66T3yefu8Xs1oJjI8n5ToqeHo8pjQs/view?usp=sharing
-
+  https://drive.google.com/drive/folders/1y8lIIlnOU1NLR46XGMc0Gq9DO5bpd3H2
